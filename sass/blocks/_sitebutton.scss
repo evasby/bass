@@ -1,0 +1,27 @@
+.sitebutton{
+	position: relative;
+	font-size: 18px;
+	font-style: bold;
+	@include link(#fff, #fff);
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	display: inline-block;
+	padding: 12px 0 0;
+	background: rgba(246,101,4,1);
+	background: linear-gradient(to bottom, rgba(241,98,1,1) 0%, rgba(194,26,0,1) 100%);
+	height: 47px;
+	width: 270px;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+	border: 1px solid #9e8e22;
+	box-shadow: inset 0px 5px 5px -5px rgba(245,78,0,0.5),
+	 						0px 1px 3px 0px rgba(245,78,0,1);
+	border-radius: 4px;
+	&:hover{
+		background: linear-gradient(to bottom, rgba(194,26,0,1) 0%, rgba(241,98,1,1) 100%);
+	}
+	&:active{
+		box-shadow: none;
+	  top: 2px;
+	}
+}

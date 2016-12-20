@@ -1,3 +1,25 @@
 .header{
-
+	&_middle{
+		@include clearfix;
+		padding: 45px 0 0;
+	}
+	&_item{
+		float: left;
+		width: 33.33%;
+	}
+	&_left{
+		float: left;
+		width: 33.33%;
+	}
+	&_center{
+		float: left;
+		width: 33.33%;
+	}
+	&_right{
+		float: left;
+		width: 33.33%;
+		text-align: right;
+		background: transparent url('../images/color-line.png') right bottom no-repeat;
+		padding: 0 0 17px;
+	}
 }

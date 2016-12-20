@@ -1,0 +1,22 @@
+.sitephone{
+	text-align: right;
+	margin-bottom: 12px;
+	&_phone{
+		position: relative;
+		padding: 0 0 0 47px;
+		display: inline-block;
+		&:before{
+			content: '';
+			position: absolute;
+			left: 2px;
+			top: 1px;
+			width: 28px;
+			height: 28px;
+			background: transparent url('../images/sitephone-phone.png') left top no-repeat;
+		}
+		p{
+			letter-spacing: -1px;
+			display: inline-block;
+		}
+	}
+}
