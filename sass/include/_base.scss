@@ -1,0 +1,53 @@
+*{
+  box-sizing: border-box;
+}
+body{
+
+}
+a{
+  
+}
+b, strong{
+ 
+}
+em{
+ 
+}
+textarea{
+  resize: none;
+}
+input{
+}
+button, input[type="reset"], input[type="button"], input[type="submit"] {
+  box-shadow: none;
+}
+a, input, textarea, select, button, div{
+  &:focus{
+    outline: none;
+  }
+}
+pre{
+  word-wrap: break-word;
+}
+::-webkit-input-placeholder {
+
+}
+:-moz-placeholder {
+
+}
+::-moz-placeholder {
+
+}
+:-ms-input-placeholder {
+
+}
+::-ms-input-placeholder {
+
+}
+:placeholder-shown {
+
+}
+//:focus::-webkit-input-placeholder {color: transparent}
+//:focus::-moz-placeholder          {color: transparent}
+//:focus:-moz-placeholder           {color: transparent}
+//:focus:-ms-input-placeholder      {color: transparent}
