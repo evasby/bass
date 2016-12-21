@@ -24,4 +24,8 @@
 		box-shadow: none;
 	  top: 2px;
 	}
+	@include old-ie{
+		*display: block;
+		*height: 35px;
+	}
 }

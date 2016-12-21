@@ -1,0 +1,54 @@
+.sitebanner{
+	//background-color: #ccc;
+	height: 557px;
+	padding: 13px 0 26px;
+	&_bac{
+		height: 518px;
+		background: transparent url('../images/sitebanner-bac.jpg') 50% top no-repeat;
+		background-size: cover;
+		@include m1600{
+			background-size: 100% 100%;
+		}
+	}
+	&_inner{
+		width: 1170px;
+		margin: 0 auto;
+		position: relative;
+	}
+	&_family{
+		position: absolute;
+		right: -56px;
+		top: 126px;
+		z-index: 0;
+	}
+	&_water{
+		position: absolute;
+		right: -212px;
+		top: 278px;
+		z-index: 1;
+	}
+	&_text{
+		position: absolute;
+		top: 44px;
+		left: 383px;
+		z-index: 2;
+	}
+	&_girl{
+		position: absolute;
+		top: 258px;
+		left: 343px;
+		z-index: 3;
+	}
+	&_droplets{
+		position: absolute;
+		top: 202px;
+		left: 234px;
+		z-index: 4;
+	}
+	&_man{
+		position: absolute;
+		top: -13px;
+		left: -61px;
+		z-index: 5;
+	}
+}

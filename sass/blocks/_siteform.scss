@@ -1,0 +1,39 @@
+.siteform{
+	overflow: hidden;
+	padding: 20px 0 0;
+	margin-top: -20px;
+	&_bac{
+		height: 208px;
+		background: #002357 url('../images/siteform-bac.jpg') 50% top no-repeat;
+		background-size: cover;
+	}
+
+	&_yellow{
+		color: #ffd308;
+	}
+	&_inner{
+		position: relative;
+	}
+	&_boy{
+		position: absolute;
+		z-index: 0;
+		left: -119px;
+		top: -20px;
+	}
+	&_text{
+		position: absolute;
+		z-index: 1;
+		left: 32px;
+		top: 37px;
+	}
+	&_title{
+		text-align: right;
+		font-size: 36px;
+		color: #fefefe;
+		font-weight: bold;
+		text-transform: uppercase;
+		padding: 43px 11px 0 0;
+		position: relative;
+		z-index: 2;
+	}
+}

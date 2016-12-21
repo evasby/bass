@@ -1,0 +1,13 @@
+.wfs{
+	display: inline-block;
+	margin: 22px 0 0;
+	width: 271px;
+	height: 69px;
+	background: transparent url('../images/wfs.png') left top no-repeat;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	@include old-ie{
+		*display: block;
+	}
+}

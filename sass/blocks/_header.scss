@@ -1,7 +1,9 @@
 .header{
+	min-width: 1170px;
+	overflow: hidden;
 	&_middle{
 		@include clearfix;
-		padding: 45px 0 0;
+		padding: 45px 0 48px;
 	}
 	&_item{
 		float: left;

@@ -1,3 +1,35 @@
 .footer{
-
+	background-color: #002357;
+	position: relative;
+	height: 190px;
+	padding: 39px 0 0;
+	&:before{
+		content: '';
+		display: block;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		height: 6px;
+		width: 100%;
+		background: transparent url('../images/color-line.png') left top repeat-x;
+	}
+	@include old-ie{
+		*height: 151px;
+	}
+	&_inner{
+		@include clearfix;
+	}
+	&_left{
+		float: left;
+		width: 33.33%;
+	}
+	&_center{
+		float: left;
+		width: 33.33%;
+	}
+	&_right{
+		float: left;
+		width: 33.33%;
+		text-align: right;
+	}
 }

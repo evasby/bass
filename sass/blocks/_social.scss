@@ -1,0 +1,39 @@
+.social{
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	margin: 42px 0 0 119px;
+	@include old-ie{
+		*display: block;
+		@include clearfix;
+	}
+	&_link{
+		display: inline-block;
+		margin: 0 3px;
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
+		width: 38px;
+		height: 47px;
+		opacity: 0.8;
+		transition: opacity 0.2s;
+		&:hover{
+			opacity: 1;
+		}
+		&__fb{
+			background: transparent url('../images/social.png') 0 0 no-repeat;
+		}
+		&__ig{
+			width: 40px;
+			background: transparent url('../images/social.png') -49px 0 no-repeat;
+		}
+		&__vk{
+			width: 40px;
+			background: transparent url('../images/social.png') -97px 0 no-repeat;
+		}
+		@include old-ie{
+			*display: block;
+			float: left;
+		}
+	}
+}

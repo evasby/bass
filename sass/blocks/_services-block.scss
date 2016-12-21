@@ -1,0 +1,122 @@
+.services-block{
+	background: #002357 url('../images/services-block-bac.jpg') 50% top no-repeat;
+	background-size: cover;
+	padding: 34px 0 115px;
+	position: relative;
+	&:before{
+		content: '';
+		display: block;
+		position: absolute;
+		left: 50%;
+		margin-left: -135px;
+		bottom: 40px;
+		width: 269px;
+		height: 29px;
+		background: transparent url('../images/wave.png') left top no-repeat;
+	}
+	@include old-ie{
+		*background-size: 100% 100%;
+	}
+	&_title{
+		text-align: center;
+		font-size: 26px;
+		line-height: 1;
+		color: #fff;
+		font-weight: bold;
+		text-transform: uppercase;
+		position: relative;
+		padding: 0 265px;
+		margin: 0 0 43px;
+		&:before{
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 50%;
+			margin-top: -3px;
+			width: 270px;
+			height: 6px;
+			background: transparent url('../images/color-line.png') left top no-repeat;
+		}
+		&:after{
+			content: '';
+			position: absolute;
+			right: 0;
+			top: 50%;
+			margin-top: -3px;
+			width: 270px;
+			height: 6px;
+			background: transparent url('../images/color-line.png') left top no-repeat;
+		}
+	}
+	&_inner{
+		@include clearfix;
+	}
+	&_item{
+		float: left;
+		width: 31.62%;
+		margin-left: 2.57%;
+		&:first-child{
+			margin-left: 0;
+		}
+	}
+	&_img{
+		display: block;
+		border: 6px solid #f2f7fa;
+		transition: border-color 0.2s;
+		margin: 0 0 37px;
+		&:hover{
+			border-color: #224ECF;
+		}
+		img{
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+	}
+	&_name{
+		font-size: 18px;
+		line-height: 30px;
+		color: #fff;
+		font-weight: bold;
+		text-transform: uppercase;
+		text-align: center;
+		padding: 0 15px;
+		margin: 0 0 27px;
+	}
+	&_link{
+		font-size: 12px;
+		@include link(#fff, #fff);
+		text-decoration: none;
+		display: block;
+		width: 168px;
+		height: 32px;
+		margin: 0 auto;
+		padding: 9px 0 0;
+		text-align: center;
+		border-top: 1px solid #85b2ff;
+		border-bottom: 1px solid #0032cb;
+		background: rgba(96,154,255,1);
+		background: linear-gradient(to bottom, rgba(96,154,255,1) 0%, rgba(24,109,255,1) 100%);
+		position: relative;
+		box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.5);
+		&:before{
+			content: '';
+			position: absolute;
+			top: 10px;
+			right: 21px;
+			width: 14px;
+			height: 11px;
+			background: transparent url('../images/link-arrow.png') left top no-repeat;
+		}
+		&:hover{
+			background: linear-gradient(to bottom, rgba(24,109,255,1) 0%, rgba(96,154,255,1) 100%);
+		}
+		&:active{
+			box-shadow: none;
+		  top: 2px;
+		}
+		@include old-ie{
+			*height: 23px;
+		}
+	}
+}

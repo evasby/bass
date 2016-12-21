@@ -1,0 +1,96 @@
+.how{
+	padding: 34px 0 85px;
+	background: transparent url('../images/how-bac.png') left bottom repeat-x;
+	&_title{
+		text-align: center;
+		font-size: 26px;
+		line-height: 1;
+		color: #213287;
+		font-weight: bold;
+		text-transform: uppercase;
+		position: relative;
+		padding: 0 265px;
+		margin: 0 0 43px;
+		&:before{
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 50%;
+			margin-top: -3px;
+			width: 270px;
+			height: 6px;
+			background: transparent url('../images/color-line.png') left top no-repeat;
+		}
+		&:after{
+			content: '';
+			position: absolute;
+			right: 0;
+			top: 50%;
+			margin-top: -3px;
+			width: 270px;
+			height: 6px;
+			background: transparent url('../images/color-line.png') left top no-repeat;
+		}
+	}
+	&_slider{
+		@include clearfix;
+
+	}
+	&_item{
+		float: left;
+		border: 3px solid #4666d8;
+	}
+	&_link{
+		display: block;
+		img{
+			display: block;
+			width: 100%;
+			height: auto;
+			outline: 1px solid #fff;
+			transition: outline-color 0.2s;
+		}
+		.how_item:hover & img{
+			outline: 1px solid #4666d8;
+		}
+	}
+	&_inner{
+		position: relative;
+	}
+	.bx-prev{
+		display: block;
+		position: absolute;
+		top: 50%;
+		margin-top: -28px;
+		left: -14px;
+		width: 29px;
+		height: 56px;
+		background: transparent url('../images/how-arrows.png') left top no-repeat;
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
+		opacity: 0.8;
+		transition: opacity 0.2s;
+		&:hover{
+			opacity: 1;
+		}
+	}
+	.bx-next{
+		display: block;
+		position: absolute;
+		top: 50%;
+		margin-top: -28px;
+		right: -14px;
+		width: 29px;
+		height: 56px;
+		background: transparent url('../images/how-arrows.png') -29px top no-repeat;
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
+		opacity: 0.8;
+		transition: opacity 0.2s;
+		&:hover{
+			opacity: 1;
+		}
+	}
+
+}

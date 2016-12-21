@@ -1,6 +1,9 @@
 .sitephone{
 	text-align: right;
 	margin-bottom: 12px;
+	@include old-ie{
+		*margin-bottom: 9px;
+	}
 	&_phone{
 		position: relative;
 		padding: 0 0 0 47px;
@@ -13,6 +16,10 @@
 			width: 28px;
 			height: 28px;
 			background: transparent url('../images/sitephone-phone.png') left top no-repeat;
+		}
+		@include old-ie{
+			*padding: 1px 0 1px 47px;
+			*background: transparent url('../images/sitephone-phone.png') 118px 50% no-repeat;
 		}
 		p{
 			letter-spacing: -1px;
