@@ -1,0 +1,36 @@
+.sitecontent{
+	margin: -33px 0 0;
+	padding: 43px 0 50px;
+	background: transparent url('../images/bac.jpg') 50% top no-repeat;
+	background-size: cover;
+	h1{
+		text-align: center;
+		font-size: 29px;
+		line-height: 1;
+		color: #364fca;
+		text-transform: uppercase;
+		position: relative;
+		padding: 0 265px;
+		margin: 0 0 30px;
+		&:before{
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 50%;
+			margin-top: -3px;
+			width: 270px;
+			height: 6px;
+			background: transparent url('../images/color-line.png') left top no-repeat;
+		}
+		&:after{
+			content: '';
+			position: absolute;
+			right: 0;
+			top: 50%;
+			margin-top: -3px;
+			width: 270px;
+			height: 6px;
+			background: transparent url('../images/color-line.png') left top no-repeat;
+		}
+	}
+}

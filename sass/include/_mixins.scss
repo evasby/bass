@@ -7,6 +7,9 @@
 @mixin m1600 {
   @media all and (min-width: 1600px) { @content; }
 }
+@mixin m1920 {
+  @media all and (min-width: 1920px) { @content; }
+}
 /*@mixin m480 {
   @media all and (max-width: 480px) { @content; }
 }

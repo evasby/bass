@@ -1,61 +1,58 @@
-.siteform{
-	overflow: hidden;
-	padding: 20px 0 0;
-	margin-top: -20px;
-	&_bac{
-		height: 208px;
-		background: #002357 url('../images/siteform-bac.jpg') 50% top no-repeat;
-		background-size: cover;
-	}
-
-	&_yellow{
-		color: #ffd308;
-	}
-	&_inner{
-		position: relative;
-	}
-	&_boy{
+.popup{
+	width: 362px;
+	background-color: #fff;
+	padding: 37px 0 80px;
+	position: relative;
+	&:before{
+		content: '';
 		position: absolute;
-		z-index: 0;
-		left: -119px;
-		top: -20px;
+		top: 0;
+		left: 0;
+		height: 6px;
+		width: 100%;
+		background: transparent url('../images/color-line.png') left top repeat-x;
 	}
-	&_text{
+	&:after{
+		content: '';
 		position: absolute;
-		z-index: 1;
-		left: 32px;
-		top: 37px;
+		bottom: 0;
+		left: 0;
+		height: 6px;
+		width: 100%;
+		background: transparent url('../images/color-line.png') left top repeat-x;
 	}
 	&_title{
-		text-align: right;
-		font-size: 36px;
-		color: #fefefe;
+		font-size: 19px;
+		line-height: 24px;
+		color: #0070bf;
 		font-weight: bold;
 		text-transform: uppercase;
-		padding: 43px 11px 0 0;
+		width: 269px;
+		margin: 0 auto 30px auto;
+		text-align: center;
+		padding: 47px 5px 0;
 		position: relative;
-		z-index: 2;
-	}
-	&_form{
-		position: absolute;
-		z-index: 3;
-		top: 99px;
-		right: 0;
-		@include clearfix;
-		border: 1px solid #fff;
-		padding: 13px;
+		&:before{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 29px;
+			background: transparent url('../images/wave.png') left top no-repeat;
+		}
 	}
 	&_input{
-		width: 242px;
-		float: left;
-		margin: 0 34px 0 0;
+		width: 267px;
+		margin: 0 auto 22px auto;
 		position: relative;
 		input{
 			width: 100%;
-			height: 37px;
-			border: 1px solid #cecece;
+			height: 38px;
+			border: 1px solid #ececec;
 			position: relative;
-			padding: 0 0 0 70px
+			padding: 0 0 0 70px;
+			box-shadow: inset 1px 1px 0px 0px rgba(208,208,208,1);
 		}
 		&__name{
 			&:before{
@@ -102,13 +99,37 @@
 				font-size: 12px;
 			}
 		}
+		&__email{
+			input{
+				padding: 0 0 0 88px;
+			}
+			&:before{
+				content: '';
+				position: absolute;
+				z-index: 1000;
+				width: 21px;
+				height: 21px;
+				display: block;
+				top: 8px;
+				left: 11px;
+				background: transparent url('../images/siteform-icons.png') -42px top no-repeat;
+			}
+			&:after{
+				content: 'Е-майл:';
+				position: absolute;
+				top: 13px;
+				left: 40px;
+				color: #454545;
+				font-size: 12px;
+			}
+		}
 	}
 	&_submit{
-		float: left;
-		width: 268px;
+		width: 252px;
+		margin: 35px auto 0 auto;
 		input{
 			width: 100%;
-			height: 37px;
+			height: 38px;
 			position: relative;
 			font-size: 19px;
 			font-weight: bold;
@@ -117,7 +138,7 @@
 			text-align: center;
 			text-transform: uppercase;
 			display: inline-block;
-			padding: 2px 0 0;
+			padding: 3px 0 0;
 			background: rgba(246,101,4,1);
 			background: linear-gradient(to bottom, rgba(255,109,2,1) 0%, rgba(201,67,0,1) 100%);	
 			text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
@@ -136,8 +157,25 @@
 			}
 			@include old-ie{
 				*display: block;
-				*height: 35px;
+				*height: 34px;
 			}
+		}
+	}
+	&_close{
+		position: absolute;
+		top: 17px;
+		right: 17px;
+		width: 33px;
+		height: 33px;
+		background: transparent url('../images/map-info-close.png') left top no-repeat;
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
+		cursor: pointer;
+		opacity: 0.8;
+		transition: opacity 0.2s;
+		&:hover{
+			opacity: 1;
 		}
 	}
 }

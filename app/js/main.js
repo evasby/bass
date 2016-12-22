@@ -1,8 +1,6 @@
 $(document).ready(function(){
 
 	$('#how_slider').bxSlider({
-	  //mode: 'fade',
-	  //captions: true
 	  auto: true,
 	  pager: false,
 	  minSlides: 4,
@@ -11,5 +9,29 @@ $(document).ready(function(){
 	  slideWidth: 253,
 	  slideMargin: 28
 	});
+
+	$('.map-info_close').click(function(){
+		$('.map-info').hide();
+	});
+
+	$('.to-up').click(function() {
+    $('html, body').animate({ scrollTop: 0 }, 200);
+    return false;
+  });
+  if($('.to-up').length>0){
+    var waypoint_main1_1 = new Waypoint({
+      element: document.getElementById('to-up'),
+      handler: function(dir) {
+        if (dir === 'down') {
+          $('.to-up').addClass('to-up__on');
+        } else{
+          $('.to-up').removeClass('to-up__on');
+        }
+      },
+      offset: 0
+    })
+	}
+
+  $(".sitebutton").colorbox({inline:true, href:"#popup1"});
 
 });

@@ -1,0 +1,25 @@
+.bredcrumbs{
+	height: 84px;
+	position: relative;
+	background: transparent url('../images/bredcrumbs-bac.png') 50% top no-repeat;
+	@include m1920{
+		background-size: 100% 100%;
+	}
+	&_link{
+		font-size: 15px;
+		text-decoration: none;
+		@include link(#364fca, lighten(#364fca, 20%));
+	}
+	&_span{
+		font-size: 15px;
+		color: #bd2701;
+		padding-left: 5px;
+	}
+	&_list{
+		@include clearfix;
+		padding: 16px 0 0;
+	}
+	&_item{
+		float: left;
+	}
+}

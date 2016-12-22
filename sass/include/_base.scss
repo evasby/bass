@@ -1,6 +1,9 @@
 *{
   box-sizing: border-box;
 }
+.hide{
+	display: none;
+}
 body{
 	font-family: $font;
 	min-width: 1170px;

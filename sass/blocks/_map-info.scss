@@ -1,0 +1,126 @@
+.map-info{
+	background-color: #fff;
+	width: 405px;
+	position: absolute;
+	top: 91px;
+	left: 121px;
+	&:before{
+		content: '';
+		position: absolute;
+		z-index: 2;
+		top: 0;
+		left: 0;
+		width: 6px;
+		height: 100%;
+		background: transparent url('../images/color-line-vertical.png') left top repeat-y;
+	}
+	&:after{
+		content: '';
+		position: absolute;
+		z-index: 2;
+		top: 0;
+		right: 0;
+		width: 6px;
+		height: 100%;
+		background: transparent url('../images/color-line-vertical.png') left top repeat-y;
+	}
+	&_inner{
+		position: relative;
+		padding: 9px 0 12px;
+		&:before{
+			content: '';
+			position: absolute;
+			z-index: 1;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 6px;
+			background: transparent url('../images/color-line.png') left top repeat-x;
+		}
+		&:after{
+			content: '';
+			position: absolute;
+			z-index: 1;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 6px;
+			background: transparent url('../images/color-line.png') left top repeat-x;
+		}
+	}
+	&_logo{
+		display: block;
+		width: 141px;
+		margin: 0 auto 9px auto;
+		img{
+			width: 100%;
+			height: auto;
+		}
+	}
+	&_man{
+		position: absolute;
+		z-index: 10;
+		bottom: -22px;
+		left: -116px;
+	}
+	&_address{
+		background-color: #7aa3ff;		
+		text-align: center;
+		p{
+			width: 250px;
+			margin: 0 auto;
+			line-height: 16px;
+			padding: 2px 0 8px;
+			position: relative;
+			&:before{
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				height: 1px;
+				width: 100%;
+				background: transparent url('../images/team-dash.png') left top repeat-x;
+			}
+			&:last-child{
+				&:before{
+					display: none;
+				}
+			}
+		}
+	}
+	&_phones{
+		text-align: left;
+		p{
+			padding: 0 0 0 110px;
+			line-height: 41px;
+			position: relative;
+			&:before{
+				content: '';
+				position: absolute;
+				left: 70px;
+				top: 8px;
+				width: 28px;
+				height: 28px;
+				background: transparent url('../images/sitephone-phone.png') left top no-repeat;
+			}
+			&:nth-child(even){
+				background-color: #e4ecff;
+			}
+		}
+	}
+	&_close{
+		position: absolute;
+		z-index: 10;
+		top: 13px;
+		right: 11px;
+		width: 33px;
+		height: 33px;
+		background: transparent url('../images/map-info-close.png') left top no-repeat;
+		cursor: pointer;
+		opacity: 0.8;
+		transition: opacity 0.2s;
+		&:hover{
+			opacity: 1;
+		}
+	}
+}

@@ -1,0 +1,20 @@
+.to-up{
+	width: 104px;
+	height: 39px;
+	position: fixed;
+	z-index: 10;
+	right: 28px;
+	bottom: 135px;
+	background: transparent url('../images/to-up-bac.png') left top no-repeat;
+	cursor: pointer;
+	opacity: 0.7;
+	transition: opacity 0.2s;
+	visibility: hidden;
+	&__on{
+		visibility: visible;
+		opacity: 0.7;
+	}
+	&:hover{
+		opacity: 1;
+	}
+}
