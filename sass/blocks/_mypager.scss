@@ -1,0 +1,33 @@
+.mypager{
+	text-align: center;
+	margin: -20px 0 15px;
+	&_item{
+		display: inline-block;
+		color: #fefefe;
+		font-size: 14px;
+		text-transform: uppercase;
+		margin: 0 5px;
+		height: 35px;
+		width: 35px;
+		padding: 10px 0 0;
+		background: rgba(91,151,255,1);
+		background: linear-gradient(to bottom, rgba(91,151,255,1) 0%, rgba(27,111,255,1) 100%);
+		transition: opacity 0.2s;
+		&:hover{
+			opacity: 0.5;
+		}
+		&__current{
+			opacity: 0.5;
+		}
+		&__start,
+		&__end{
+			width: 130px;
+		}
+		a{
+			display: block;
+			height: 35px;
+			@include link(#fefefe, #fefefe);
+			text-decoration: none;
+		}
+	}
+}

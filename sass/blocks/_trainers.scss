@@ -1,0 +1,136 @@
+.trainers{
+	&_item{
+		background-color: #fff;
+		border: 1px solid #d7d7d7;
+		box-shadow: 0px 1px 13px 0px rgba(0,47,77,0.4);
+		@include clearfix;
+		margin: 0 0 83px;
+		position: relative;
+		&:before{
+			content: '';
+			display: block;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 6px;
+			background: transparent url('../images/color-line.png') left top repeat-x;
+		}
+	}
+	&_left{
+		float: left;
+		background-color: #f5f6fb;
+		padding: 25px;
+		border: 2px solid #fff;
+		border-bottom-width: 8px;
+		border-right: none;
+	}
+	&_right{
+		overflow: hidden;
+	}
+	&_wrap{
+		border: 3px solid #fff;
+	}
+	&_image{
+		img{
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+	}
+	&_name{
+		background-color: #00245e;
+		font-size: 18px;
+		line-height: 24px;
+		color: #fff;
+		text-align: center;
+		padding: 16px 15px 9px;
+	}
+	&_name1{
+		font-weight: bold;
+		text-transform: uppercase;
+		display: block;
+	}
+	&_name2{
+		display: block;
+	}
+	&_title{
+		@include clearfix;
+		background: transparent url('../images/team-dash.png') left bottom repeat-x;
+		padding: 31px 240px 31px 55px;
+		position: relative;
+		&:before{
+			content: '';
+			display: block;
+			position: absolute;
+			top: 22px;
+			right: 64px;
+			width: 158px;
+			height: 51px;
+			background: transparent url('../images/logo-watermark.png') left top no-repeat;
+			background-size: 100% 100%;
+		}
+	}
+	&_job{
+		float: left;
+		color: #3a3c3c;
+		height: 24px;
+		font-size: 24px;
+		line-height: 24px;
+	}
+	&_category{
+		float: left;
+		color: #bd2900;
+		font-size: 14px;
+		height: 24px;
+		line-height: 24px;
+		padding: 2px 0 0 6px;
+		text-transform: uppercase;
+	}
+	&_text{
+		padding: 23px 0 46px;
+		border-bottom: 1px solid #91a1ba;
+		color: #565656;
+		font-size: 12px;
+		line-height: 14px;
+		background: transparent url('../images/how-bac.png') left bottom repeat-x;
+		p{
+			margin-bottom: 14px;
+		}
+	}
+	&_bottom{
+		@include clearfix;
+	}
+	&_link{
+		float: right;
+		margin: 21px 52px 21px 0;
+		position: relative;
+		font-size: 15px;
+		font-weight: bold;
+		@include link(#fff, #fff);
+		text-decoration: none;
+		text-align: center;
+		text-transform: uppercase;
+		padding: 14px 0 0;
+		background: rgba(246,101,4,1);
+		background: linear-gradient(to bottom, rgba(241,98,1,1) 0%, rgba(194,26,0,1) 100%);
+		height: 47px;
+		width: 270px;
+		text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+		border: 1px solid #9e8e22;
+		box-shadow: inset 0px 5px 5px -5px rgba(245,78,0,0.5),
+		 						0px 1px 3px 0px rgba(245,78,0,1);
+		border-radius: 4px;
+		&:hover{
+			background: linear-gradient(to bottom, rgba(194,26,0,1) 0%, rgba(241,98,1,1) 100%);
+		}
+		&:active{
+			box-shadow: none;
+		  top: 2px;
+		}
+		@include old-ie{
+			*display: block;
+			*height: 33px;
+		}
+	}
+}

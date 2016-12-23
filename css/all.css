@@ -2712,9 +2712,14 @@ pre {
 
 #cboxCurrent {
   position: absolute;
-  top: -22px;
-  right: 205px;
-  text-indent: -9999px; }
+  bottom: 0;
+  right: auto;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  background-color: #0099DE;
+  padding: 3px 0; }
 
 /* these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles */
 #cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {
@@ -2734,18 +2739,52 @@ pre {
   outline: 0; }
 
 #cboxPrevious {
-  background-position: 0px 0px;
-  right: 44px; }
+  background-position: 0 0;
+  right: auto;
+  display: block;
+  position: absolute;
+  top: 50%;
+  margin-top: -28px;
+  left: 21px;
+  width: 29px;
+  height: 56px;
+  background: transparent url("../images/how-arrows.png") left top no-repeat;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s; }
+  #colorbox:hover #cboxPrevious {
+    opacity: 0.8; }
+  #cboxPrevious:hover {
+    opacity: 1; }
 
 #cboxPrevious:hover {
-  background-position: 0px -25px; }
+  background-position: 0 0; }
 
 #cboxNext {
-  background-position: -25px 0px;
-  right: 22px; }
+  display: block;
+  position: absolute;
+  top: 50%;
+  margin-top: -28px;
+  right: 21px;
+  width: 29px;
+  height: 56px;
+  background: transparent url("../images/how-arrows.png") -29px top no-repeat;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s; }
+  #colorbox:hover #cboxNext {
+    opacity: 0.8; }
+  #cboxNext:hover {
+    opacity: 1; }
 
 #cboxNext:hover {
-  background-position: -25px -25px; }
+  background-position: -29px 0; }
 
 #cboxClose {
   width: 33px;
@@ -3204,6 +3243,383 @@ pre {
       color: #66c2ff; }
   .user-content p {
     margin-bottom: 14px; }
+
+.trainers_item {
+  background-color: #fff;
+  border: 1px solid #d7d7d7;
+  -webkit-box-shadow: 0px 1px 13px 0px rgba(0, 47, 77, 0.4);
+  box-shadow: 0px 1px 13px 0px rgba(0, 47, 77, 0.4);
+  margin: 0 0 83px;
+  position: relative; }
+  .trainers_item:before, .trainers_item:after {
+    content: ".";
+    display: block;
+    height: 0;
+    overflow: hidden; }
+  .trainers_item:after {
+    clear: both; }
+  .trainers_item:before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background: transparent url("../images/color-line.png") left top repeat-x; }
+
+.trainers_left {
+  float: left;
+  background-color: #f5f6fb;
+  padding: 25px;
+  border: 2px solid #fff;
+  border-bottom-width: 8px;
+  border-right: none; }
+
+.trainers_right {
+  overflow: hidden; }
+
+.trainers_wrap {
+  border: 3px solid #fff; }
+
+.trainers_image img {
+  display: block;
+  width: 100%;
+  height: auto; }
+
+.trainers_name {
+  background-color: #00245e;
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+  text-align: center;
+  padding: 16px 15px 9px; }
+
+.trainers_name1 {
+  font-weight: bold;
+  text-transform: uppercase;
+  display: block; }
+
+.trainers_name2 {
+  display: block; }
+
+.trainers_title {
+  background: transparent url("../images/team-dash.png") left bottom repeat-x;
+  padding: 31px 240px 31px 55px;
+  position: relative; }
+  .trainers_title:before, .trainers_title:after {
+    content: ".";
+    display: block;
+    height: 0;
+    overflow: hidden; }
+  .trainers_title:after {
+    clear: both; }
+  .trainers_title:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 22px;
+    right: 64px;
+    width: 158px;
+    height: 51px;
+    background: transparent url("../images/logo-watermark.png") left top no-repeat;
+    background-size: 100% 100%; }
+
+.trainers_job {
+  float: left;
+  color: #3a3c3c;
+  height: 24px;
+  font-size: 24px;
+  line-height: 24px; }
+
+.trainers_category {
+  float: left;
+  color: #bd2900;
+  font-size: 14px;
+  height: 24px;
+  line-height: 24px;
+  padding: 2px 0 0 6px;
+  text-transform: uppercase; }
+
+.trainers_text {
+  padding: 23px 0 46px;
+  border-bottom: 1px solid #91a1ba;
+  color: #565656;
+  font-size: 12px;
+  line-height: 14px;
+  background: transparent url("../images/how-bac.png") left bottom repeat-x; }
+  .trainers_text p {
+    margin-bottom: 14px; }
+
+.trainers_bottom:before, .trainers_bottom:after {
+  content: ".";
+  display: block;
+  height: 0;
+  overflow: hidden; }
+
+.trainers_bottom:after {
+  clear: both; }
+
+.trainers_link {
+  float: right;
+  margin: 21px 52px 21px 0;
+  position: relative;
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 14px 0 0;
+  background: #f66504;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f16201), to(#c21a00));
+  background: -webkit-linear-gradient(top, #f16201 0%, #c21a00 100%);
+  background: linear-gradient(to bottom, #f16201 0%, #c21a00 100%);
+  height: 47px;
+  width: 270px;
+  text-shadow: 1px 1px 1px black;
+  border: 1px solid #9e8e22;
+  -webkit-box-shadow: inset 0px 5px 5px -5px rgba(245, 78, 0, 0.5), 0px 1px 3px 0px #f54e00;
+  box-shadow: inset 0px 5px 5px -5px rgba(245, 78, 0, 0.5), 0px 1px 3px 0px #f54e00;
+  border-radius: 4px; }
+  .trainers_link:link {
+    color: #fff; }
+  .trainers_link:visited {
+    color: #fff; }
+  .trainers_link:active {
+    color: #fff; }
+  .trainers_link:hover {
+    color: #fff; }
+  .trainers_link:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(#c21a00), to(#f16201));
+    background: -webkit-linear-gradient(top, #c21a00 0%, #f16201 100%);
+    background: linear-gradient(to bottom, #c21a00 0%, #f16201 100%); }
+  .trainers_link:active {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    top: 2px; }
+
+.rewards:before, .rewards:after {
+  content: ".";
+  display: block;
+  height: 0;
+  overflow: hidden; }
+
+.rewards:after {
+  clear: both; }
+
+.rewards_item {
+  float: left;
+  width: 23.33%;
+  margin: 0 0 2.22% 2.22%;
+  border: 3px solid #4666d8;
+  outline: 1px solid #fff;
+  position: relative; }
+  .rewards_item:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #fff;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+  .rewards_item:nth-child(4n-3) {
+    margin: 0 0 0 0; }
+  .rewards_item img {
+    display: block;
+    width: 100%;
+    height: auto; }
+
+.reviews {
+  padding: 76px 0 0; }
+  .reviews_item {
+    background-color: #fff;
+    margin: 0 0 100px;
+    border: 1px solid #d8d8d8;
+    -webkit-box-shadow: 0px 1px 13px 0px rgba(0, 47, 77, 0.4);
+    box-shadow: 0px 1px 13px 0px rgba(0, 47, 77, 0.4);
+    position: relative;
+    z-index: 0; }
+    .reviews_item:before {
+      content: '';
+      display: block;
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 30px;
+      background: transparent url("../images/how-bac-rotated.png") left top repeat-x;
+      background-size: auto 100%; }
+    .reviews_item:after {
+      content: '';
+      display: block;
+      position: absolute;
+      z-index: -1;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 30px;
+      background: transparent url("../images/how-bac.png") left top repeat-x;
+      background-size: auto 100%; }
+  .reviews_inner {
+    background: transparent url("../images/color-line.png") left bottom repeat-x;
+    -webkit-transition: background-color 0.2s;
+    transition: background-color 0.2s; }
+    .reviews_inner:before, .reviews_inner:after {
+      content: ".";
+      display: block;
+      height: 0;
+      overflow: hidden; }
+    .reviews_inner:after {
+      clear: both; }
+    .reviews_item:hover .reviews_inner {
+      background: rgba(141, 179, 252, 0.3) url("../images/color-line.png") left bottom repeat-x; }
+  .reviews_left {
+    float: left;
+    width: 444px; }
+  .reviews_right {
+    padding: 43px 0 0;
+    overflow: hidden; }
+  .reviews_image {
+    background: #709900;
+    display: block;
+    width: 333px;
+    height: 333px;
+    margin: 0 0 0 34px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    -webkit-box-shadow: 0px 0px 52px 0px rgba(0, 0, 0, 0.52);
+    box-shadow: 0px 0px 52px 0px rgba(0, 0, 0, 0.52);
+    -webkit-transition: border-color 0.5s;
+    transition: border-color 0.5s;
+    position: relative;
+    top: -37px; }
+    .reviews_image:hover {
+      border: 3px solid #709900; }
+  .reviews_wrap {
+    border: 7px solid #709900;
+    width: 327px;
+    height: 327px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+    -webkit-transition: border-color 0.5s;
+    transition: border-color 0.5s; }
+    .reviews_wrap:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      -webkit-box-shadow: inset 0px 0px 10px 2px white;
+      box-shadow: inset 0px 0px 10px 2px white; }
+    .reviews_wrap img {
+      display: block;
+      width: 100%;
+      height: auto; }
+  .reviews_title {
+    font-size: 30px;
+    color: #3a3c3c;
+    margin: 0 0 23px; }
+  .reviews_text {
+    font-size: 12px;
+    color: #565656;
+    line-height: 14px;
+    margin: 0 0 27px;
+    padding: 0 75px 0 0;
+    min-height: 112px; }
+    .reviews_text p {
+      margin: 0 0 14px; }
+  .reviews_link {
+    font-size: 14px;
+    color: #fefefe;
+    text-decoration: none;
+    display: block;
+    width: 257px;
+    height: 35px;
+    margin: 0 0 66px 0;
+    padding: 10px 0 0;
+    text-align: center;
+    border-top: 1px solid #85b2ff;
+    border-bottom: 1px solid #0032cb;
+    background: #609aff;
+    background: -webkit-gradient(linear, left top, left bottom, from(#609aff), to(#186dff));
+    background: -webkit-linear-gradient(top, #609aff 0%, #186dff 100%);
+    background: linear-gradient(to bottom, #609aff 0%, #186dff 100%);
+    position: relative;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5); }
+    .reviews_link:link {
+      color: #fefefe; }
+    .reviews_link:visited {
+      color: #fefefe; }
+    .reviews_link:active {
+      color: #fefefe; }
+    .reviews_link:hover {
+      color: #fefefe; }
+    .reviews_link:before {
+      content: '';
+      position: absolute;
+      top: 11px;
+      right: 21px;
+      width: 14px;
+      height: 11px;
+      background: transparent url("../images/link-arrow.png") left top no-repeat; }
+    .reviews_link:hover {
+      background: -webkit-gradient(linear, left top, left bottom, from(#186dff), to(#609aff));
+      background: -webkit-linear-gradient(top, #186dff 0%, #609aff 100%);
+      background: linear-gradient(to bottom, #186dff 0%, #609aff 100%); }
+    .reviews_link:active {
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      top: 2px; }
+
+.mypager {
+  text-align: center;
+  margin: -20px 0 15px; }
+  .mypager_item {
+    display: inline-block;
+    color: #fefefe;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 0 5px;
+    height: 35px;
+    width: 35px;
+    padding: 10px 0 0;
+    background: #5b97ff;
+    background: -webkit-gradient(linear, left top, left bottom, from(#5b97ff), to(#1b6fff));
+    background: -webkit-linear-gradient(top, #5b97ff 0%, #1b6fff 100%);
+    background: linear-gradient(to bottom, #5b97ff 0%, #1b6fff 100%);
+    -webkit-transition: opacity 0.2s;
+    transition: opacity 0.2s; }
+    .mypager_item:hover {
+      opacity: 0.5; }
+    .mypager_item__current {
+      opacity: 0.5; }
+    .mypager_item__start, .mypager_item__end {
+      width: 130px; }
+    .mypager_item a {
+      display: block;
+      height: 35px;
+      color: #fefefe;
+      text-decoration: none; }
+      .mypager_item a:link {
+        color: #fefefe; }
+      .mypager_item a:visited {
+        color: #fefefe; }
+      .mypager_item a:active {
+        color: #fefefe; }
+      .mypager_item a:hover {
+        color: #fefefe; }
 
 .uspeh {
   background-color: #e2ecf3;
