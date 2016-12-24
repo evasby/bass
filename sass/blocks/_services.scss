@@ -1,0 +1,131 @@
+.services{
+	padding: 11px 0 0;
+	&_item{
+		margin: 0 0 72px;
+		padding: 35px 0 0 35px;
+		border: 1px solid #d7d7d7;
+		box-shadow: 0px 1px 13px 0px rgba(0,47,77,0.4);
+		background-color: #fff;
+		background: #fff url('../images/color-line.png') left bottom repeat-x;
+		background-repeat: repeat-x;
+		background-position: left bottom;
+		position: relative;
+		&:before{
+			content: '';
+			display: block;
+			position: absolute;
+			bottom: 6px;
+			left: 0;
+			width: 100%;
+			height: 30px;
+			background: transparent url('../images/how-bac.png') left top repeat-x;
+			background-size: auto 100%;
+		}
+		&:after{
+			content: '';
+			display: block;
+			position: absolute;
+			bottom: 67px;
+			left: 46px;
+			height: 50px;
+			width: 160px;
+			background: transparent url('../images/logo-watermark.png') left top no-repeat;
+			background-size: contain;
+		}
+	}
+	&_text{
+		padding: 0 60px 0 0;
+		color: #565656;
+		font-size: 12px;
+		line-height: 14px;
+		a{
+			@include link(#0099ff, lighten(#0099ff, 20%));
+		}
+		p{
+			margin-bottom: 14px;
+		}
+	}
+	&_img{
+		float: left;
+		border: 1px solid #b6b6b6;
+		border-radius: 7px;
+		overflow: hidden;
+		margin: 0 45px 35px 0;
+		position: relative;
+		width: 320px;
+		&:after{
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			box-shadow: inset 0px 0px 30px 10px rgba(255,255,255,1);
+		}
+		.services_item:nth-child(even) &{
+			float: right;
+			margin: 0 45px 35px 45px;
+		}
+		img{
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+	}
+	&_title{
+		font-size: 24px;
+		line-height: 24px;
+		padding: 0 370px 17px 0;
+		margin: 0 0 25px;
+		color: #3a3c3c;
+		position: relative;
+		overflow: hidden;
+		&:before{
+			content: '';
+			display: block;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 1px;
+			background: transparent url('../images/team-dash.png') left top repeat-x;
+		}
+	}
+	&_bottom{
+		text-align: center;
+		//height: 200px;
+		padding: 27px 0 70px;
+	}
+	&_link{
+		position: relative;
+		font-size: 15px;
+		font-weight: bold;
+		@include link(#fff, #fff);
+		text-decoration: none;
+		text-align: center;
+		text-transform: uppercase;
+		display: inline-block;
+		padding: 10px 0 0;
+		background: rgba(246,101,4,1);
+		background: linear-gradient(to bottom, rgba(241,98,1,1) 0%, rgba(194,26,0,1) 100%);
+		height: 40px;
+		width: 270px;
+		text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+		border: 1px solid #9e8e22;
+		box-shadow: inset 0px 5px 5px -5px rgba(245,78,0,0.5),
+		 						0px 1px 3px 0px rgba(245,78,0,1);
+		border-radius: 4px;
+		&:hover{
+			background: linear-gradient(to bottom, rgba(194,26,0,1) 0%, rgba(241,98,1,1) 100%);
+		}
+		&:active{
+			box-shadow: none;
+		  top: 2px;
+		}
+		@include old-ie{
+			*display: block;
+			*height: 33px;
+		}
+	}
+}

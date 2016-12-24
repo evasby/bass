@@ -5,20 +5,18 @@
 	padding: 46px 46px 134px;
 	border: 1px solid #d7d7d7;
 	box-shadow: 0px 1px 13px 0px rgba(0,47,77,0.4);
-	background-color: #fff;
-	background-image: url('../images/how-bac.png');
-	background-repeat: repeat-x;
-	background-position: left bottom;
+	background: #fff url('../images/color-line.png') left bottom repeat-x;
 	position: relative;
 	&:before{
 		content: '';
 		display: block;
 		position: absolute;
-		bottom: 0;
+		bottom: 6px;
 		left: 0;
-		height: 6px;
 		width: 100%;
-		background: #fff url('../images/color-line.png') left top repeat-x;
+		height: 30px;
+		background: transparent url('../images/how-bac.png') left top repeat-x;
+		background-size: auto 100%;
 	}
 	&:after{
 		content: '';

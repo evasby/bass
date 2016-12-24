@@ -1,6 +1,7 @@
 .bredcrumbs{
 	height: 84px;
 	position: relative;
+	z-index: 1;
 	background: transparent url('../images/bredcrumbs-bac.png') 50% top no-repeat;
 	@include m1920{
 		background-size: 100% 100%;
@@ -9,6 +10,10 @@
 		font-size: 15px;
 		text-decoration: none;
 		@include link(#364fca, lighten(#364fca, 20%));
+		padding: 0 0 0 5px;
+		.bredcrumbs_item:first-child{
+			padding: 0;
+		}
 	}
 	&_span{
 		font-size: 15px;

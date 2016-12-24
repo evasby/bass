@@ -34,6 +34,7 @@ $(document).ready(function(){
 
   $(".sitebutton").colorbox({inline:true, href:"#popup1"});
   $(".trainers_link").colorbox({inline:true, href:"#popup1"});
+  $(".services_link").colorbox({inline:true, href:"#popup1"});
   $(".rewards_item").colorbox({
     rel:"group1",
     current: "{current} из {total}"
