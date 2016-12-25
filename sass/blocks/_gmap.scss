@@ -1,7 +1,11 @@
 .gmap{
 	height: 583px;
 	background-color: #ccc;
+	.contacts-type &{
+		margin: -27px 0 0;
+	}
 	&_inner{
 		position: relative;
+		z-index: 1;
 	}
 }

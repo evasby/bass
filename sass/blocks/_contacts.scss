@@ -1,0 +1,156 @@
+.contacts{
+	background: transparent url('../images/contacts-bac.png') 50% top no-repeat;
+	position: relative;
+	z-index: 2;
+	&_inner{
+		height: 642px;
+		padding: 69px 0 0;
+	}
+	&_form{
+		width: 352px;
+		margin: 0 auto;
+	}
+	&_title{
+		font-size: 19px;
+		line-height: 24px;
+		color: #0070bf;
+		font-weight: bold;
+		text-transform: uppercase;
+		width: 269px;
+		margin: 0 auto 10px auto;
+		text-align: center;
+		padding: 47px 5px 0;
+		position: relative;
+		&:before{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 29px;
+			background: transparent url('../images/wave.png') left top no-repeat;
+		}
+	}
+	&_input{
+		width: 267px;
+		margin: 0 auto 22px auto;
+		position: relative;
+		input{
+			width: 100%;
+			height: 38px;
+			border: 1px solid #ececec;
+			position: relative;
+			padding: 0 0 0 70px;
+			box-shadow: inset 1px 1px 0px 0px rgba(208,208,208,1);
+		}
+		&__name{
+			&:before{
+				content: '';
+				position: absolute;
+				z-index: 1000;
+				width: 21px;
+				height: 21px;
+				display: block;
+				top: 8px;
+				left: 12px;
+				background: transparent url('../images/siteform-icons.png') left top no-repeat;
+			}
+			&:after{
+				content: 'Имя:';
+				position: absolute;
+				top: 13px;
+				left: 40px;
+				color: #454545;
+				font-size: 12px;
+			}
+		}
+		&__phone{
+			input{
+				padding: 0 0 0 98px;
+			}
+			&:before{
+				content: '';
+				position: absolute;
+				z-index: 1000;
+				width: 21px;
+				height: 21px;
+				display: block;
+				top: 8px;
+				left: 12px;
+				background: transparent url('../images/siteform-icons.png') -21px top no-repeat;
+			}
+			&:after{
+				content: 'Телефон:';
+				position: absolute;
+				top: 13px;
+				left: 40px;
+				color: #454545;
+				font-size: 12px;
+			}
+		}
+		&__email{
+			input{
+				padding: 0 0 0 88px;
+			}
+			&:before{
+				content: '';
+				position: absolute;
+				z-index: 1000;
+				width: 21px;
+				height: 21px;
+				display: block;
+				top: 8px;
+				left: 11px;
+				background: transparent url('../images/siteform-icons.png') -42px top no-repeat;
+			}
+			&:after{
+				content: 'Е-майл:';
+				position: absolute;
+				top: 13px;
+				left: 40px;
+				color: #454545;
+				font-size: 12px;
+			}
+		}
+	}
+	&_submit{
+		border: 3px solid #fff;
+		border-radius: 5px;
+		text-align: center;
+		margin: 225px 0 0;
+		padding: 3px 0;
+		box-shadow: 0px 12px 21px 0px rgba(0,19,113,1);
+		input{
+			cursor: pointer;
+			position: relative;
+			font-size: 18px;
+			font-weight: bold;
+			@include link(#fff, #fff);
+			text-decoration: none;
+			text-align: center;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 0;
+			background: rgba(246,101,4,1);
+			background: linear-gradient(to bottom, rgba(241,98,1,1) 0%, rgba(194,26,0,1) 100%);
+			height: 52px;
+			width: 340px;
+			text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+			border: 1px solid #9e8e22;
+			box-shadow: inset 0px 5px 5px -5px rgba(245,78,0,0.5),
+			 						0px 1px 3px 0px rgba(245,78,0,1);
+			border-radius: 4px;
+			&:hover{
+				background: linear-gradient(to bottom, rgba(194,26,0,1) 0%, rgba(241,98,1,1) 100%);
+			}
+			&:active{
+				box-shadow: none;
+			  top: 2px;
+			}
+			@include old-ie{
+				*display: block;
+				*height: 33px;
+			}
+		}
+	}
+}

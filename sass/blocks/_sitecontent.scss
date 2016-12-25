@@ -51,4 +51,15 @@
 			color: #fff;
 		}
 	}
+	&__contacts{
+		//height: 725px;
+		background: rgba(113,151,240,1);
+		background: linear-gradient(to bottom, rgba(113,151,240,1) 0%, rgba(198,216,255,1) 100%);
+		padding: 43px 0 0;
+		//margin-bottom: -46px;
+		//position: relative;
+		h1{
+			margin: 0 0 40px;
+		}
+	}
 }
