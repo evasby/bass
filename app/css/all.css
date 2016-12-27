@@ -3107,12 +3107,28 @@ pre {
     position: absolute;
     right: -56px;
     top: 126px;
-    z-index: 0; }
+    z-index: 0;
+    -webkit-animation-name: family;
+    animation-name: family;
+    -webkit-animation-duration: 4000ms;
+    animation-duration: 4000ms;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite; }
   .sitebanner_water {
     position: absolute;
     right: -212px;
     top: 278px;
-    z-index: 1; }
+    z-index: 1;
+    -webkit-animation-name: waterg, waterv;
+    animation-name: waterg, waterv;
+    -webkit-animation-duration: 8000ms, 3000ms;
+    animation-duration: 8000ms, 3000ms;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite; }
   .sitebanner_text {
     position: absolute;
     top: 44px;
@@ -3122,12 +3138,28 @@ pre {
     position: absolute;
     top: 258px;
     left: 343px;
-    z-index: 3; }
+    z-index: 3;
+    -webkit-animation-name: girlv, girlg;
+    animation-name: girlv, girlg;
+    -webkit-animation-duration: 2000ms, 8000ms;
+    animation-duration: 2000ms, 8000ms;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite; }
   .sitebanner_droplets {
     position: absolute;
     top: 202px;
     left: 234px;
-    z-index: 4; }
+    z-index: 4;
+    -webkit-animation-name: droplets;
+    animation-name: droplets;
+    -webkit-animation-duration: 5000ms;
+    animation-duration: 5000ms;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite; }
   .sitebanner_man {
     position: absolute;
     top: -13px;
@@ -3185,6 +3217,78 @@ pre {
       -webkit-box-shadow: none;
       box-shadow: none;
       top: 2px; }
+
+@-webkit-keyframes girlv {
+  50% {
+    top: 268px; }
+  100% {
+    top: 258px; } }
+
+@keyframes girlv {
+  50% {
+    top: 268px; }
+  100% {
+    top: 258px; } }
+
+@-webkit-keyframes girlg {
+  50% {
+    left: 323px; }
+  100% {
+    left: 343px; } }
+
+@keyframes girlg {
+  50% {
+    left: 323px; }
+  100% {
+    left: 343px; } }
+
+@-webkit-keyframes waterg {
+  50% {
+    right: -202px; }
+  100% {
+    right: -212px; } }
+
+@keyframes waterg {
+  50% {
+    right: -202px; }
+  100% {
+    right: -212px; } }
+
+@-webkit-keyframes waterv {
+  50% {
+    top: 288px; }
+  100% {
+    top: 278px; } }
+
+@keyframes waterv {
+  50% {
+    top: 288px; }
+  100% {
+    top: 278px; } }
+
+@-webkit-keyframes family {
+  50% {
+    top: 136px; }
+  100% {
+    top: 126px; } }
+
+@keyframes family {
+  50% {
+    top: 136px; }
+  100% {
+    top: 126px; } }
+
+@-webkit-keyframes droplets {
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes droplets {
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 .bredcrumbs {
   height: 84px;

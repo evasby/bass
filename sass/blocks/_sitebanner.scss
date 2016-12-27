@@ -20,12 +20,24 @@
 		right: -56px;
 		top: 126px;
 		z-index: 0;
+		animation-name: family;
+		//animation-delay: 3s;
+		animation-duration: 4000ms;
+		animation-timing-function: ease-in-out;
+		animation-iteration-count: infinite;
 	}
 	&_water{
 		position: absolute;
 		right: -212px;
 		top: 278px;
 		z-index: 1;
+		animation-name: waterg,
+										waterv;
+		//animation-delay: 3s;
+		animation-duration: 8000ms,
+												3000ms;
+		animation-timing-function: ease-in-out;
+		animation-iteration-count: infinite;
 	}
 	&_text{
 		position: absolute;
@@ -38,12 +50,23 @@
 		top: 258px;
 		left: 343px;
 		z-index: 3;
+		animation-name: girlv,
+										girlg;
+		//animation-delay: 3s;
+		animation-duration: 2000ms,
+												8000ms;
+		animation-timing-function: ease-in-out;
+		animation-iteration-count: infinite;
 	}
 	&_droplets{
 		position: absolute;
 		top: 202px;
 		left: 234px;
 		z-index: 4;
+		animation-name: droplets;
+		animation-duration: 5000ms;
+		animation-timing-function: ease-in-out;
+		animation-iteration-count: infinite;
 	}
 	&_man{
 		position: absolute;
@@ -97,5 +120,53 @@
 			*display: block;
 			*height: 33px;
 		}
+	}
+}
+@keyframes girlv{
+	50%{
+		top: 268px;
+	}
+	100%{
+		top: 258px;
+	}
+}
+@keyframes girlg{
+	50%{
+		left: 323px;
+	}
+	100%{
+		left: 343px;
+	}
+}
+@keyframes waterg{
+	50%{
+		right: -202px;
+	}
+	100%{
+		right: -212px;
+	}
+}
+@keyframes waterv{
+	50%{
+		top: 288px;
+	}
+	100%{
+		top: 278px;
+	}
+}
+@keyframes family{
+	50%{
+		top: 136px;
+	}
+	100%{
+		top: 126px;
+	}
+}
+@keyframes droplets{
+	50%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
 	}
 }
