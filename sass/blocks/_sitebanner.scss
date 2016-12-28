@@ -59,6 +59,7 @@
 		animation-iteration-count: infinite;
 	}
 	&_droplets{
+		transform: translateZ(0);
 		position: absolute;
 		top: 202px;
 		left: 234px;
@@ -168,5 +169,13 @@
 	}
 	100%{
 		opacity: 1;
+	}
+}
+@keyframes dropletszoom{
+	50%{
+		transform: scale(1.2);
+	}
+	100%{
+		transform: scale(1);
 	}
 }

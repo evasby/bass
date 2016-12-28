@@ -1,6 +1,11 @@
 .rewards{
-	@include clearfix;
-	&_item{
+	&_text{
+		margin-bottom: 15px;
+	}
+	&_wrap{
+		@include clearfix;
+	}
+	a{
 		float: left;
 		width: 23.33%;
 		margin: 0 0 2.22% 2.22%;
