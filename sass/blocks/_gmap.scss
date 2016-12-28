@@ -1,7 +1,8 @@
 .gmap{
 	height: 583px;
 	background-color: #ccc;
-	.contacts-type &{
+	.contacts-type &,
+	.node-type-webform &{
 		margin: -27px 0 0;
 	}
 	&_inner{
