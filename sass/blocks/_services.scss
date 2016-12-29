@@ -32,6 +32,59 @@
 			background: transparent url('../images/logo-watermark.png') left top no-repeat;
 			background-size: contain;
 		}
+		table{
+			font-size: 18px;
+			color: #00255d;
+			width: 100%;
+			border-collapse: collapse;
+			background-color: #fff;
+		}
+		.rtecenter{
+			text-align: center;
+			padding: 0;
+		}
+		tbody{
+			border: none;
+		}
+		td, th{
+			border-left: 1px solid #5b5b5b;
+			border-right: 1px solid #5b5b5b;
+			border-top: 1px dashed #5b5b5b;
+			border-bottom: 1px dashed #5b5b5b;
+			//min-width: 70px;
+		}
+		th{
+			background: rgba(126,169,255,1);
+			background: linear-gradient(to bottom, rgba(126,169,255,1) 0%, rgba(115,164,255,1) 100%);
+			text-align: center;
+			font-size: 24px;
+			line-height: 1;
+			font-weight: bold;
+			padding: 22px 17px;
+		}
+		td{
+			padding: 15px 15px 15px 40px;
+		}
+		tr:first-child th {
+		  border-top: 1px solid #fff;
+		}
+		tr:last-child td {
+		  border-bottom: 1px solid #5b5b5b;
+
+		}
+		tr td:first-child,
+		tr th:first-child {
+			//border-left-color: #fff;
+			border-left: none;
+		}
+		tr td:last-child,
+		tr th:last-child {
+		  //border-right-color: #fff;
+		  border-right: none;
+		}
+		tr:hover td{
+			//background-color: #8cb5fa!important;
+		}
 	}
 	&_text{
 		padding: 0 60px 0 0;

@@ -4,6 +4,8 @@
 	&_middle{
 		@include clearfix;
 		padding: 45px 0 48px;
+		position: relative;
+		z-index: 1;
 	}
 	&_item{
 		float: left;
