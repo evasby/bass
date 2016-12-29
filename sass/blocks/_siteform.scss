@@ -44,6 +44,9 @@
 		@include clearfix;
 		border: 1px solid #fff;
 		padding: 13px;
+		&__confirm{
+			margin: 0 12px 0 0;
+		}
 	}
 	&_input{
 		width: 242px;
@@ -56,6 +59,10 @@
 			border: 1px solid #cecece;
 			position: relative;
 			padding: 0 0 0 70px
+		}
+		input.error{
+			//border-color: #DE0000;
+			box-shadow: inset 0px 0px 10px 0px rgba(222,0,0,1);
 		}
 		&__name{
 			&:before{
@@ -139,5 +146,11 @@
 				*height: 35px;
 			}
 		}
+	}
+	&_confirmation{
+		color: #fff;
+	}
+	.messages{
+		display: none;
 	}
 }

@@ -49,7 +49,7 @@ gulp.task('css', function () {
     }))
     .pipe(gulp.dest('css'))
     .pipe(gulp.dest('app/css'))
-    //.pipe(gulp.dest('c:/OpenServer/domains/topreklama/bitrix/templates/.default/css'))
+    .pipe(gulp.dest('c:/OS2/OpenServer/domains/swimming/sites/all/themes/swimming/css'))
     .pipe(connect.reload())
     .pipe(notify('CSS - Done!'));
 });

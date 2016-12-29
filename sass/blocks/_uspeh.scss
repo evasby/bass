@@ -33,7 +33,8 @@
 			background: transparent url('../images/color-line.png') left top no-repeat;
 		}
 	}
-	&_inner{
+	&_inner,
+	&-inner{
 		@include clearfix;
 	}
 	&_item{

@@ -5,8 +5,13 @@
 	.node-type-webform &{
 		margin: -27px 0 0;
 	}
-	&_inner{
+	&_map{
+		height: 583px;
 		position: relative;
 		z-index: 1;
+	}
+	&_inner{
+		position: relative;
+		z-index: 2;
 	}
 }

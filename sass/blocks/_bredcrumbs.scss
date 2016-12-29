@@ -6,8 +6,12 @@
 	@include m1920{
 		background-size: 100% 100%;
 	}
-	&_link{
+	&_item{
+		float: left;
 		font-size: 15px;
+		color: #364fca;
+	}
+	&_link{	
 		text-decoration: none;
 		@include link(#364fca, lighten(#364fca, 20%));
 		padding: 0 0 0 5px;
@@ -23,8 +27,5 @@
 	&_list{
 		@include clearfix;
 		padding: 16px 0 0;
-	}
-	&_item{
-		float: left;
 	}
 }

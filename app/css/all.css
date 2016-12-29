@@ -163,7 +163,7 @@ $innerPadings: 0 12px;*/
   -webkit-animation-delay: 2s;
   animation-delay: 2s; }
 
-.form-popup_button {
+.popup_submit {
   position: relative; }
 
 .ajax-progress {
@@ -3316,8 +3316,11 @@ pre {
   @media all and (min-width: 1920px) {
     .bredcrumbs {
       background-size: 100% 100%; } }
-  .bredcrumbs_link {
+  .bredcrumbs_item {
+    float: left;
     font-size: 15px;
+    color: #364fca; }
+  .bredcrumbs_link {
     text-decoration: none;
     color: #364fca;
     padding: 0 0 0 5px; }
@@ -3344,8 +3347,6 @@ pre {
       overflow: hidden; }
     .bredcrumbs_list:after {
       clear: both; }
-  .bredcrumbs_item {
-    float: left; }
 
 .sitecontent {
   margin: -33px 0 0;
@@ -4041,7 +4042,6 @@ pre {
     line-height: 24px;
     padding: 0 370px 17px 0;
     margin: 0 0 25px;
-    color: #3a3c3c;
     position: relative;
     overflow: hidden; }
     .services_title:before {
@@ -4053,6 +4053,19 @@ pre {
       width: 100%;
       height: 1px;
       background: transparent url("../images/team-dash.png") left top repeat-x; }
+    .services_title a {
+      color: #3a3c3c;
+      -webkit-transition: color 0.2s;
+      transition: color 0.2s;
+      text-decoration: none; }
+      .services_title a:link {
+        color: #3a3c3c; }
+      .services_title a:visited {
+        color: #3a3c3c; }
+      .services_title a:active {
+        color: #3a3c3c; }
+      .services_title a:hover {
+        color: #6c7070; }
   .services_bottom {
     text-align: center;
     padding: 27px 0 70px; }
@@ -4324,6 +4337,8 @@ pre {
       font-size: 12px; }
     .contacts_input__phone input {
       padding: 0 0 0 98px; }
+    .contacts_input__phone input.error {
+      border-color: #DE0000; }
     .contacts_input__phone:before {
       content: '';
       position: absolute;
@@ -4343,6 +4358,8 @@ pre {
       font-size: 12px; }
     .contacts_input__email input {
       padding: 0 0 0 88px; }
+    .contacts_input__email input.error {
+      border-color: #DE0000; }
     .contacts_input__email:before {
       content: '';
       position: absolute;
@@ -4406,6 +4423,23 @@ pre {
         -webkit-box-shadow: none;
         box-shadow: none;
         top: 2px; }
+  .contacts .messages {
+    display: none;
+    position: absolute;
+    width: 267px;
+    bottom: 270px;
+    /*left: 10px;
+		right: 10px;*/
+    margin: 0 auto;
+    font-size: 12px; }
+    .contacts .messages li {
+      font-size: 12px; }
+    .contacts .messages.error {
+      background-color: transparent;
+      background-size: 15px 15px; }
+  .contacts_confirmation {
+    text-align: center;
+    padding: 0 50px; }
 
 .mypager {
   text-align: center;
@@ -4477,12 +4511,12 @@ pre {
       width: 270px;
       height: 6px;
       background: transparent url("../images/color-line.png") left top no-repeat; }
-  .uspeh_inner:before, .uspeh_inner:after {
+  .uspeh_inner:before, .uspeh_inner:after, .uspeh-inner:before, .uspeh-inner:after {
     content: ".";
     display: block;
     height: 0;
     overflow: hidden; }
-  .uspeh_inner:after {
+  .uspeh_inner:after, .uspeh-inner:after {
     clear: both; }
   .uspeh_item {
     float: left;
@@ -4544,12 +4578,12 @@ pre {
       width: 270px;
       height: 6px;
       background: transparent url("../images/color-line.png") left top no-repeat; }
-  .services-block_inner:before, .services-block_inner:after {
+  .services-block_inner:before, .services-block_inner:after, .services-block-inner:before, .services-block-inner:after {
     content: ".";
     display: block;
     height: 0;
     overflow: hidden; }
-  .services-block_inner:after {
+  .services-block_inner:after, .services-block-inner:after {
     clear: both; }
   .services-block_item {
     float: left;
@@ -4653,12 +4687,12 @@ pre {
       width: 270px;
       height: 6px;
       background: transparent url("../images/color-line.png") left top no-repeat; }
-  .how_slider:before, .how_slider:after {
+  .how_slider:before, .how_slider:after, .how-slider:before, .how-slider:after {
     content: ".";
     display: block;
     height: 0;
     overflow: hidden; }
-  .how_slider:after {
+  .how_slider:after, .how-slider:after {
     clear: both; }
   .how_item {
     float: left;
@@ -4745,12 +4779,12 @@ pre {
       width: 270px;
       height: 6px;
       background: transparent url("../images/color-line.png") left top no-repeat; }
-  .team_inner:before, .team_inner:after {
+  .team_inner:before, .team_inner:after, .team-inner:before, .team-inner:after {
     content: ".";
     display: block;
     height: 0;
     overflow: hidden; }
-  .team_inner:after {
+  .team_inner:after, .team-inner:after {
     clear: both; }
   .team_item {
     float: left;
@@ -4947,6 +4981,8 @@ pre {
       overflow: hidden; }
     .siteform_form:after {
       clear: both; }
+    .siteform_form__confirm {
+      margin: 0 12px 0 0; }
   .siteform_input {
     width: 242px;
     float: left;
@@ -4958,6 +4994,9 @@ pre {
       border: 1px solid #cecece;
       position: relative;
       padding: 0 0 0 70px; }
+    .siteform_input input.error {
+      -webkit-box-shadow: inset 0px 0px 10px 0px #de0000;
+      box-shadow: inset 0px 0px 10px 0px #de0000; }
     .siteform_input__name:before {
       content: '';
       position: absolute;
@@ -5036,6 +5075,10 @@ pre {
         -webkit-box-shadow: none;
         box-shadow: none;
         top: 2px; }
+  .siteform_confirmation {
+    color: #fff; }
+  .siteform .messages {
+    display: none; }
 
 .gmap {
   height: 583px;
@@ -5043,15 +5086,19 @@ pre {
   .contacts-type .gmap,
   .node-type-webform .gmap {
     margin: -27px 0 0; }
-  .gmap_inner {
+  .gmap_map {
+    height: 583px;
     position: relative;
     z-index: 1; }
+  .gmap_inner {
+    position: relative;
+    z-index: 2; }
 
 .map-info {
   background-color: #fff;
   width: 405px;
   position: absolute;
-  top: 91px;
+  bottom: 181px;
   left: 121px; }
   .map-info:before {
     content: '';
@@ -5225,6 +5272,8 @@ pre {
       padding: 0 0 0 70px;
       -webkit-box-shadow: inset 1px 1px 0px 0px #d0d0d0;
       box-shadow: inset 1px 1px 0px 0px #d0d0d0; }
+    .popup_input input.error {
+      border-color: #DE0000; }
     .popup_input__name:before {
       content: '';
       position: absolute;
@@ -5338,6 +5387,20 @@ pre {
     transition: opacity 0.2s; }
     .popup_close:hover {
       opacity: 1; }
+  .popup .messages {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    font-size: 12px; }
+    .popup .messages li {
+      font-size: 12px; }
+    .popup .messages.error {
+      background-color: transparent;
+      background-size: 15px 15px; }
+  .popup_confirmation {
+    text-align: center;
+    padding: 0 50px; }
 
 .footer {
   background-color: #002357;

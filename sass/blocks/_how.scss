@@ -32,9 +32,9 @@
 			background: transparent url('../images/color-line.png') left top no-repeat;
 		}
 	}
-	&_slider{
+	&_slider,
+	&-slider{
 		@include clearfix;
-
 	}
 	&_item{
 		float: left;
