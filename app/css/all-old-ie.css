@@ -5588,3 +5588,11 @@ pre {
   white-space: nowrap;
   overflow: hidden;
   *display: block; }
+
+.block-uptolike .uptl_container {
+  padding: 8px !important;
+  border: 1px solid #ffffff !important;
+  border-radius: 5px;
+  background-color: #1d2475;
+  -webkit-box-shadow: inset -37px 0px 0px -10px #0c1044;
+  box-shadow: inset -37px 0px 0px -10px #0c1044; }
